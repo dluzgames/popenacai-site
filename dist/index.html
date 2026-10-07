@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popen Açaí • O Verdadeiro Açaí Artesanal de Paraíso do Tocantins</title>
+    <meta name="description" content="O melhor açaí cremoso, taças gourmet, barcas e salgados de Paraíso do Tocantins. Peça pelo WhatsApp com entrega rápida no Centro e Pouso Alegre.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        acai: {
+                            950: '#0F0314',
+                            900: '#1A0623',
+                            800: '#2A0B39',
+                            700: '#3F1254',
+                            600: '#581C87',
+                            500: '#7E22CE',
+                            400: '#A855F7',
+                            300: '#C084FC',
+                            100: '#F3E8FF',
+                        },
+                        tropical: {
+                            amber: '#F59E0B',
+                            gold: '#FBBF24',
+                            emerald: '#10B981',
+                            strawberry: '#EF4444',
+                            creamy: '#FFFBEB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Syne"', '"Cabinet Grotesk"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(26, 6, 35, 0.75);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(168, 85, 247, 0.15);
+        }
+        .glow-acai {
+            box-shadow: 0 0 35px -8px rgba(168, 85, 247, 0.35);
+        }
+        .frost-badge {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(126, 34, 206, 0.2));
+            border: 1px solid rgba(245, 158, 11, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-acai-950 text-stone-100 font-sans antialiased selection:bg-tropical-amber selection:text-acai-950">
+
+    <!-- Top Alert Bar -->
+    <div class="bg-gradient-to-r from-acai-900 via-acai-700 to-acai-900 border-b border-acai-600/40 py-2 px-4 text-center text-xs sm:text-sm font-medium flex items-center justify-center gap-2">
+        <span class="inline-block animate-pulse text-base">🍧</span>
+        <span>Aberto hoje das <strong>13:00 às 22:30</strong> • Atendimento no Centro e Pouso Alegre</span>
+        <span class="hidden md:inline text-tropical-gold font-bold">• Entrega Rápida Sem Derreter</span>
+    </div>
+
+    <!-- Header Navbar -->
+    <nav class="sticky top-0 z-50 bg-acai-950/85 backdrop-blur-md border-b border-acai-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-acai-700 to-acai-500 border border-acai-400/40 flex items-center justify-center text-2xl font-black text-white shadow-lg shadow-acai-500/25">
+                    P
+                </div>
+                <div>
+                    <span class="font-display text-xl sm:text-2xl font-extrabold tracking-tight text-white block leading-none">
+                        POPEN <span class="text-tropical-gold">AÇAÍ</span>
+                    </span>
+                    <span class="text-[10px] sm:text-xs text-acai-300 font-semibold tracking-widest uppercase">Paraíso do Tocantins</span>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-stone-300">
+                <a href="#cardapio" class="hover:text-tropical-gold transition">Cardápio</a>
+                <a href="#monte-seu-copo" class="hover:text-tropical-gold transition">Monte Seu Copo</a>
+                <a href="#galeria" class="hover:text-tropical-gold transition">Fotos Reais</a>
+                <a href="#solucoes-digitais" class="text-tropical-gold hover:text-white transition">Serviços Digitais</a>
+                <a href="#unidades" class="hover:text-tropical-gold transition">Onde Estamos</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/5563992623767?text=Ol%C3%A1%2C%20vi%20o%20site%20do%20Popen%20A%C3%A7a%C3%AD%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" class="bg-gradient-to-r from-tropical-emerald to-emerald-600 hover:from-emerald-500 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-full flex items-center gap-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+                    <span>📱</span>
+                    <span>Pedir no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-12 pb-20 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-acai-500 rounded-full blur-[140px]"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-tropical-amber rounded-full blur-[140px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full frost-badge text-xs font-bold text-tropical-gold">
+                        <span>✨</span>
+                        <span>O Point Mais Tradicional de Paraíso do Tocantins</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.08]">
+                        O Açaí Mais Cremoso, Gelado e <span class="text-transparent bg-clip-text bg-gradient-to-r from-tropical-gold via-tropical-amber to-rose-400">Generoso da Cidade.</span>
+                    </h1>
+
+                    <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Sem gelo, sem economia de acompanhamentos e com a consistência perfeita para aguentar o calor de Paraíso. Do copinho do dia a dia à Barca Gigante para a família.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#monte-seu-copo" class="bg-tropical-gold hover:bg-amber-400 text-acai-950 font-extrabold px-8 py-4 rounded-2xl text-base shadow-xl shadow-amber-500/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+                            <span>🍧</span>
+                            <span>Montar Meu Açaí Agora</span>
+                        </a>
+                        <a href="https://wa.me/5563992623767?text=Ol%C3%A1%20Popen%20A%C3%A7a%C3%AD%2C%20quero%20ver%20o%20card%C3%A1pio%20completo%20de%20hoje!" target="_blank" class="glass-card hover:bg-acai-800 text-white font-semibold px-6 py-4 rounded-2xl text-base border border-acai-700 hover:border-acai-500 transition-all flex items-center gap-2">
+                            <span>📋</span>
+                            <span>Cardápio no WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Métricas Rápidas -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-acai-800/80 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-black text-white">2 Unidades</div>
+                            <div class="text-xs text-acai-300 font-medium">Centro & Pouso Alegre</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-black text-tropical-gold">100%</div>
+                            <div class="text-xs text-acai-300 font-medium">Polpa Super Cremosa</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-black text-emerald-400">Zero Taxa</div>
+                            <div class="text-xs text-acai-300 font-medium">Pedido Direto no Zap</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Visual Imersivo (Foto Real do Popen) -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-tropical-gold to-acai-500 rounded-3xl blur-lg opacity-40"></div>
+                        <div class="relative rounded-3xl overflow-hidden glass-card border border-acai-600/40 shadow-2xl">
+                            <img src="assets/popen_copo_especial.jpg" alt="Açaí Popen Especial" class="w-full h-96 object-cover hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-acai-950 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-acai-950/80 backdrop-blur-md border border-acai-700/60">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-[10px] font-bold uppercase tracking-wider text-tropical-gold">Destaque do Popen</span>
+                                        <h4 class="font-display text-lg font-bold text-white">Copo Supremo com Frutas & Nutella</h4>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-extrabold">Ao Vivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Monte Seu Copo Interativo (Simulador ao Vivo) -->
+    <section id="monte-seu-copo" class="py-20 bg-acai-900/60 border-y border-acai-800/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-tropical-gold bg-acai-800/80 px-4 py-1.5 rounded-full border border-tropical-gold/30">
+                    Calculador Inteligente
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-4">
+                    Monte Seu Açaí do Seu Jeito & Peça em 1 Clique
+                </h2>
+                <p class="text-stone-300 text-sm sm:text-base mt-2">
+                    Escolha o tamanho, marque seus adicionais preferidos e clique para enviar pronto no WhatsApp do Popen!
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto glass-card rounded-3xl p-6 sm:p-10 border border-acai-600/40">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Escolhas -->
+                    <div class="md:col-span-7 space-y-6">
+                        
+                        <!-- 1. Tamanho -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-tropical-gold mb-3">1. Escolha o Tamanho da Felicidade:</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="size-options">
+                                <button type="button" onclick="selectSize('250ml', 14.00, this)" class="size-btn p-3 rounded-xl border border-acai-700 bg-acai-950/60 text-left hover:border-tropical-gold transition active:scale-95">
+                                    <span class="block text-xs font-semibold text-stone-300">Copo P</span>
+                                    <span class="font-display text-base font-bold text-white">250 ml</span>
+                                    <span class="block text-xs font-bold text-tropical-gold mt-1">R$ 14,00</span>
+                                </button>
+                                <button type="button" onclick="selectSize('300ml', 18.00, this)" class="size-btn p-3 rounded-xl border-2 border-tropical-gold bg-acai-800 text-left transition active:scale-95">
+                                    <span class="block text-[10px] font-bold text-tropical-gold uppercase">Mais Pedido ⭐</span>
+                                    <span class="font-display text-base font-bold text-white">300 ml</span>
+                                    <span class="block text-xs font-bold text-tropical-gold mt-1">R$ 18,00</span>
+                                </button>
+                                <button type="button" onclick="selectSize('500ml', 24.00, this)" class="size-btn p-3 rounded-xl border border-acai-700 bg-acai-950/60 text-left hover:border-tropical-gold transition active:scale-95">
+                                    <span class="block text-xs font-semibold text-stone-300">Copo G</span>
+                                    <span class="font-display text-base font-bold text-white">500 ml</span>
+                                    <span class="block text-xs font-bold text-tropical-gold mt-1">R$ 24,00</span>
+                                </button>
+                                <button type="button" onclick="selectSize('700ml', 30.00, this)" class="size-btn p-3 rounded-xl border border-acai-700 bg-acai-950/60 text-left hover:border-tropical-gold transition active:scale-95">
+                                    <span class="block text-xs font-semibold text-stone-300">Copo Supremo</span>
+                                    <span class="font-display text-base font-bold text-white">700 ml</span>
+                                    <span class="block text-xs font-bold text-tropical-gold mt-1">R$ 30,00</span>
+                                </button>
+                                <button type="button" onclick="selectSize('Barca Casal', 45.00, this)" class="size-btn p-3 rounded-xl border border-acai-700 bg-acai-950/60 text-left hover:border-tropical-gold transition active:scale-95 col-span-2">
+                                    <span class="block text-xs font-semibold text-stone-300">Barca Gigante</span>
+                                    <span class="font-display text-base font-bold text-white">Barca Completa (800ml)</span>
+                                    <span class="block text-xs font-bold text-tropical-gold mt-1">R$ 45,00</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 2. Adicionais -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-tropical-gold mb-3">2. Marque os Adicionais que Você Quer:</label>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Leite Ninho', 3.00, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Leite Ninho (+R$ 3)</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Nutella Original', 5.00, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Nutella (+R$ 5)</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Morango Fresco', 4.00, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Morango (+R$ 4)</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Banana Fatiada', 2.00, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Banana (+R$ 2)</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Paçoca Rolha', 2.50, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Paçoca (+R$ 2,50)</span>
+                                </label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-acai-950/50 border border-acai-800 cursor-pointer hover:border-acai-600">
+                                    <input type="checkbox" onchange="toggleTopping('Granola Crocante', 2.00, this)" class="w-4 h-4 rounded text-acai-600 focus:ring-0">
+                                    <span>Granola (+R$ 2)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Resumo & Envio -->
+                    <div class="md:col-span-5 bg-acai-950 p-6 rounded-2xl border border-acai-700/80 space-y-5">
+                        <div class="border-b border-acai-800 pb-3">
+                            <h3 class="font-display text-lg font-bold text-white">Resumo do Seu Pedido</h3>
+                            <p class="text-xs text-acai-300">Tudo pronto para enviar no WhatsApp</p>
+                        </div>
+
+                        <div class="space-y-2 text-xs">
+                            <div class="flex justify-between text-stone-300">
+                                <span>Tamanho selecionado:</span>
+                                <strong id="res-tamanho" class="text-white">300ml</strong>
+                            </div>
+                            <div class="flex justify-between text-stone-300">
+                                <span>Preço base:</span>
+                                <span id="res-preco-base">R$ 18,00</span>
+                            </div>
+                            <div class="pt-2 border-t border-acai-900">
+                                <span class="block text-stone-400 mb-1">Adicionais escolhidos:</span>
+                                <ul id="res-adicionais-list" class="space-y-1 text-acai-300 font-medium">
+                                    <li class="italic text-stone-500">Nenhum adicional selecionado</li>
+                                </ul>
+                            </div>
+                            <div class="flex justify-between text-stone-300 pt-2 border-t border-acai-900">
+                                <span>Taxa de entrega (estimada):</span>
+                                <span class="text-emerald-400 font-bold">R$ 5,00</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-t-2 border-acai-800 flex items-center justify-between">
+                            <span class="text-xs uppercase font-bold text-stone-400">Total a Pagar:</span>
+                            <span id="res-total" class="font-display text-2xl font-black text-tropical-gold">R$ 23,00</span>
+                        </div>
+
+                        <button type="button" onclick="enviarPedidoZap()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3.5 px-4 rounded-xl text-sm shadow-xl shadow-emerald-600/30 active:scale-95 transition-all flex items-center justify-center gap-2">
+                            <span>📲</span>
+                            <span>Enviar Pedido Pronto no Zap</span>
+                        </button>
+                        <p class="text-[11px] text-center text-stone-500">Sem cadastro longo, direto para o atendente do Popen.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos Reais da Loja -->
+    <section id="galeria" class="py-20 bg-acai-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-tropical-gold font-extrabold bg-acai-900 px-3 py-1 rounded-full border border-acai-700">
+                        Fotos Reais dos Nossos Pratos
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-3">
+                        Direto do Balcão do Popen Açaí
+                    </h2>
+                    <p class="text-stone-400 text-sm mt-1">Imagens reais servidas para nossos clientes em Paraíso do Tocantins.</p>
+                </div>
+                <a href="https://wa.me/5563992623767" target="_blank" class="text-sm font-bold text-tropical-gold hover:underline flex items-center gap-1">
+                    <span>Falar com o atendente agora</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="group relative rounded-2xl overflow-hidden aspect-square glass-card">
+                    <img src="assets/popen_taca_gourmet.jpg" alt="Taça Gourmet Popen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-acai-950 via-transparent to-transparent opacity-80 flex items-end p-3">
+                        <span class="text-xs font-bold text-white">Taças Gourmet</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-square glass-card">
+                    <img src="assets/popen_barca_acai.jpg" alt="Barca Popen Açaí" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-acai-950 via-transparent to-transparent opacity-80 flex items-end p-3">
+                        <span class="text-xs font-bold text-white">Barca Completa</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-square glass-card">
+                    <img src="assets/popen_acai_frutas.jpg" alt="Açaí com Frutas Frescas" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-acai-950 via-transparent to-transparent opacity-80 flex items-end p-3">
+                        <span class="text-xs font-bold text-white">Frutas Selecionadas</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-square glass-card">
+                    <img src="assets/popen_mousse_chocolate.jpg" alt="Mousse e Sobremesas" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-acai-950 via-transparent to-transparent opacity-80 flex items-end p-3">
+                        <span class="text-xs font-bold text-white">Cremes & Mousses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO OFICIAL: SERVIÇOS & TRANSFORMAÇÃO DIGITAL (DLUZ DIGITAL) -->
+    <section id="solucoes-digitais" class="py-20 bg-gradient-to-b from-acai-900 to-acai-950 border-t border-acai-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-4 py-1.5 rounded-full">
+                    Parceria & Aceleração Comercial
+                </span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-4">
+                    Muito Além do Site: Tudo o Que a <span class="text-tropical-gold">DLuz Digital</span> Faz Por Você
+                </h2>
+                <p class="text-stone-300 text-sm sm:text-base mt-3">
+                    Somos a agência de marketing digital nativa de <strong>Paraíso do Tocantins</strong>. Preparamos este portal para você ver o nível do nosso trabalho, e temos a esteira completa para fazer o Popen vender muito mais todos os dias:
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Serviço 1: IA & Atendimento -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 hover:border-tropical-gold/60 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition">
+                        🤖
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white">Atendente IA no WhatsApp (Zero Taxas)</h3>
+                    <p class="text-stone-300 text-xs leading-relaxed">
+                        Atendimento instantâneo no zap 24h. O cliente monta o copo, passa o endereço, escolhe o pagamento e o pedido já cai impresso na cozinha. Você economiza as taxas pesadas do aiqfome.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-emerald-400">✓ Comanda de Cozinha (KDS) inclusa</span>
+                </div>
+
+                <!-- Serviço 2: Social Media & Reels -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 hover:border-tropical-gold/60 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition">
+                        📱
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white">Social Media & Reels Magnéticos</h3>
+                    <p class="text-stone-300 text-xs leading-relaxed">
+                        Vídeos curtos de dar água na boca gravados profissionalmente: açaí cremoso caindo, leite condensado escorrendo e taças fartas, gerando desejo incontrolável no feed.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-purple-400">✓ Artes para Feed & Stories diários</span>
+                </div>
+
+                <!-- Serviço 3: Tráfego Pago Local -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 hover:border-tropical-gold/60 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition">
+                        🎯
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white">Tráfego Pago Local (Meta Ads)</h3>
+                    <p class="text-stone-300 text-xs leading-relaxed">
+                        Anúncios no Instagram e Facebook atingindo toda Paraíso do Tocantins exatamente na hora de maior calor (13h às 17h e 19h às 22h), com botão direto para o WhatsApp.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-amber-400">✓ R$ 10 a R$ 15/dia que enchem a loja</span>
+                </div>
+
+                <!-- Serviço 4: Google Meu Negócio -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 hover:border-tropical-gold/60 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition">
+                        📍
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white">Google Meu Negócio & SEO Local</h3>
+                    <p class="text-stone-300 text-xs leading-relaxed">
+                        Sua empresa no topo do Google Maps quando alguém pesquisar <em>"açaí em Paraíso"</em> ou <em>"açaí perto de mim"</em>. Fotos de alta resolução e estratégia de avaliações 5 estrelas.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-blue-400">✓ Domine as buscas da cidade</span>
+                </div>
+
+            </div>
+
+            <!-- CTA Proposta Exclusiva -->
+            <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-acai-800 via-acai-700 to-acai-800 border border-tropical-gold/40 text-center space-y-4 shadow-2xl">
+                <span class="text-xs uppercase tracking-widest text-tropical-gold font-black">Condição Especial Paraíso do Tocantins</span>
+                <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+                    Gostou da Demonstração do Site do Popen Açaí?
+                </h3>
+                <p class="text-stone-200 text-sm max-w-xl mx-auto">
+                    Este portal já está pronto para rodar com o seu domínio oficial. Podemos colocar no ar ainda hoje e ativar o robô do WhatsApp.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
+                    <a href="proposta.html" class="bg-white hover:bg-stone-100 text-acai-950 font-extrabold px-6 py-3 rounded-xl text-sm shadow-lg transition">
+                        📄 Ver Proposta Comercial Completa
+                    </a>
+                    <a href="https://wa.me/5563981249724?text=Ol%C3%A1%20Duilio%2C%20sou%20do%20Popen%20A%C3%A7a%C3%AD%20e%20vi%20a%20demonstra%C3%A7%C3%A3o%20do%20site!" target="_blank" class="bg-tropical-gold hover:bg-amber-400 text-acai-950 font-extrabold px-6 py-3 rounded-xl text-sm shadow-lg transition flex items-center gap-2">
+                        <span>💬</span>
+                        <span>Conversar com o Duilio Luz</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Onde Estamos -->
+    <section id="unidades" class="py-16 bg-acai-950 border-t border-acai-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="glass-card p-6 sm:p-8 rounded-2xl border border-acai-700 space-y-3">
+                    <span class="text-xs font-bold text-tropical-gold uppercase tracking-wider">Unidade 1 • Centro</span>
+                    <h4 class="font-display text-xl font-bold text-white">Avenida Bernardo Sayão, 1046</h4>
+                    <p class="text-xs text-stone-300">Centro — Paraíso do Tocantins - TO</p>
+                    <div class="pt-2 text-xs text-stone-400">
+                        ⏰ Segunda a Sábado: 13:00 às 22:30 | Domingo: 14:00 às 22:30
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 sm:p-8 rounded-2xl border border-acai-700 space-y-3">
+                    <span class="text-xs font-bold text-tropical-gold uppercase tracking-wider">Unidade 2 • Pouso Alegre</span>
+                    <h4 class="font-display text-xl font-bold text-white">Avenida 23 de Outubro</h4>
+                    <p class="text-xs text-stone-300">Setor Pouso Alegre — Paraíso do Tocantins - TO</p>
+                    <div class="pt-2 text-xs text-stone-400">
+                        ⏰ Segunda a Domingo: 13:30 às 22:30 • Atendimento Balcão & Delivery
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-acai-950 border-t border-acai-800/60 py-10 text-center text-xs text-stone-400 space-y-3">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-display font-extrabold text-white text-base">POPEN AÇAÍ</span>
+                <span class="text-stone-500">•</span>
+                <span>Paraíso do Tocantins - TO</span>
+            </div>
+            <div class="text-stone-400">
+                Desenvolvido com excelência por <a href="https://dluz.com.br" class="text-tropical-gold font-bold hover:underline">DLuz Digital</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Montagem de Copo -->
+    <script>
+        let tamanhoAtual = '300ml';
+        let precoBase = 18.00;
+        let adicionaisSelecionados = [];
+
+        function selectSize(tamanho, preco, elemento) {
+            tamanhoAtual = tamanho;
+            precoBase = preco;
+            
+            document.querySelectorAll('.size-btn').forEach(btn => {
+                btn.classList.remove('border-2', 'border-tropical-gold', 'bg-acai-800');
+                btn.classList.add('border-acai-700', 'bg-acai-950/60');
+            });
+            elemento.classList.remove('border-acai-700', 'bg-acai-950/60');
+            elemento.classList.add('border-2', 'border-tropical-gold', 'bg-acai-800');
+
+            atualizarCalculo();
+        }
+
+        function toggleTopping(nome, valor, checkbox) {
+            if (checkbox.checked) {
+                adicionaisSelecionados.push({ nome, valor });
+            } else {
+                adicionaisSelecionados = adicionaisSelecionados.filter(a => a.nome !== nome);
+            }
+            atualizarCalculo();
+        }
+
+        function atualizarCalculo() {
+            document.getElementById('res-tamanho').innerText = tamanhoAtual;
+            document.getElementById('res-preco-base').innerText = 'R$ ' + precoBase.toFixed(2).replace('.', ',');
+
+            const listEl = document.getElementById('res-adicionais-list');
+            if (adicionaisSelecionados.length === 0) {
+                listEl.innerHTML = '<li class="italic text-stone-500">Nenhum adicional selecionado</li>';
+            } else {
+                listEl.innerHTML = adicionaisSelecionados.map(a => `
+                    <li class="flex justify-between">
+                        <span>• ${a.nome}</span>
+                        <span>+R$ ${a.valor.toFixed(2).replace('.', ',')}</span>
+                    </li>
+                `).join('');
+            }
+
+            const totalAdicionais = adicionaisSelecionados.reduce((acc, curr) => acc + curr.valor, 0);
+            const taxa = 5.00;
+            const total = precoBase + totalAdicionais + taxa;
+
+            document.getElementById('res-total').innerText = 'R$ ' + total.toFixed(2).replace('.', ',');
+        }
+
+        function enviarPedidoZap() {
+            const adics = adicionaisSelecionados.length > 0 ? adicionaisSelecionados.map(a => a.nome).join(', ') : 'Sem adicionais adicionados';
+            const totalAdicionais = adicionaisSelecionados.reduce((acc, curr) => acc + curr.valor, 0);
+            const total = precoBase + totalAdicionais + 5.00;
+
+            const msg = `Olá, Popen Açaí! Montei meu pedido pelo site oficial:
+🍧 Tamanho: ${tamanhoAtual} (R$ ${precoBase.toFixed(2).replace('.', ',')})
+🍫 Adicionais: ${adics}
+🛵 Taxa de Entrega: R$ 5,00
+💰 Total Estimado: R$ ${total.toFixed(2).replace('.', ',')}
+
+Gostaria de confirmar a entrega! Meu endereço é: `;
+
+            const url = `https://wa.me/5563992623767?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
